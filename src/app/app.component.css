@@ -14,21 +14,34 @@ section{
   font-size: 3em;
   }
 .intro{
-  height: 90vh;
-  vertical-align: middle;
+  height:80vh;
+  background-image: url("../assets/workplace.jpg");
 }
 .section2{
   background:salmon;
 }
 .content {
   display: table-cell;
-  vertical-align: middle;
+  padding: 5% 50% 50% 1%;
   color:white;
   font-size: 1.5em;
 }
+
+.typewriter h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid white; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .18em;
+  width:15em; /* Adjust as needed */
+
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
 .typewriter h2{
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: .15em solid white; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .18em;
@@ -37,7 +50,6 @@ section{
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -45,5 +57,5 @@ section{
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  50% { border-color: white; }
 }
