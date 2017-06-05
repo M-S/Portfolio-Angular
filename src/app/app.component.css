@@ -1,8 +1,7 @@
 
 section{
     width:100%;
-    padding: 0 7%;
-    display: table;
+    padding: 0% 5%;
     margin: 0;
     max-width: none;
     background-color: #373B44;
@@ -14,15 +13,14 @@ section{
   font-size: 3em;
   }
 .intro{
-  height:80vh;
+  height:85vh;
   background-image: url("../assets/workplace.jpg");
 }
 .section2{
-  background:salmon;
+  background:#eee;
 }
 .content {
-  display: table-cell;
-  padding: 5% 50% 50% 1%;
+  float: left;
   color:white;
   font-size: 1.5em;
 }
@@ -34,6 +32,7 @@ section{
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .18em;
   width:15em; /* Adjust as needed */
+
 
   animation:
     typing 3.5s steps(40, end),
