@@ -14,15 +14,22 @@ section{
   }
 .intro{
   height:85vh;
-  background-image: url("../assets/workplace.jpg");
+  background-image: url("../assets/coffee.jpg");
+  background-attachment: fixed;
+    background-position:bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .section2{
   background:#eee;
+  background-image: url("../assets/greenwall.jpg");
 }
 .content {
-  float: left;
+  float:right;
   color:white;
   font-size: 1.5em;
+  margin-top: 20vh;
+  margin-right: 5vw;
 }
 
 .typewriter h1{
